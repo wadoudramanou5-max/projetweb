@@ -1,0 +1,12 @@
+body{
+    background:#1e293b;
+}
+
+ul li{
+    background:#334155;
+    color:black;
+}
+
+ul li:hover{
+    background:#0d6efd;
+}

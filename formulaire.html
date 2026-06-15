@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulaire </title>
+</head>
+<body>
+  <style>
+    /* Police moderne */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Titres */
+h1,h2,h3,h4,h5,h6{
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Paragraphes */
+p{
+    line-height: 1.7;
+}
+
+/* Liens */
+a{
+    text-decoration: none;
+    color: #0d6efd;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #084298;
+}
+
+/* Menu */
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    background: white;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    transition: 0.3s;
+}
+
+ul li:hover{
+    transform: translateX(5px);
+    background: #0d6efd;
+    color: white;
+}
+
+/* Icônes */
+.bi{
+    margin-right: 10px;
+}
+
+/* Tableaux */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background: #0d6efd;
+    color: white;
+}
+
+th,td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background: #f8f9fa;
+}
+
+/* Formulaire */
+form{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    width: auto;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background: #084298;
+}
+
+/* CV */
+.cv{
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+header{
+    text-align: center;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.profil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Animation */
+.company{
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+  </style>
+    <h1>Je vous présente mon formulaire :</h1>
+  <form method="post" action="cible_formulaire.php">
+      <fieldset> 
+          <legend>Vos coordonnées</legend> 
+ 
+         <label for="nom">Quel est votre nom ?</label><br /> 
+         <input type="text" name="nom" id="nom" tabindex="10" /><br /> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+          <label for="prenom">Quel est votre prénom ?</label><br /> 
+          <input type="text" name="prenom" id="prenom" tabindex="20" /><br /> 
+ 
+           <label for="email">Quel est votre e-mail ?</label><br /> 
+          <input type="text" name="email" id="email" tabindex="30" /><br /> 
+        </fieldset> 
+ 
+       <fieldset> 
+          <legend>Votre souhait</legend> 
+ 
+          <p> 
+              Faites un souhait que vous voudriez voir exaucé :<br /> 
+              <input type="radio" name="souhait" value="riche" id="riche" tabindex="40" /> <label for="riche">Etre 
+              riche</label><br /> 
+             <input type="radio" name="souhait" value="celebre" id="celebre" tabindex="50" /> <label for="celebre">Etre 
+              célèbre</label><br /> 
+             <input type="radio" name="souhait" value="intelligent" id="intelligent" tabindex="60" /> <label 
+             for="intelligent">Etre <strong>encore</strong> plus intelligent</label><br /> 
+              <input type="radio" name="souhait" value="autre" id="autre" tabindex="70" /> <label 
+              for="autre">Autre...</label><br /> 
+            </p>
+           <textarea name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea> 
+
+        </fieldset>
+        <p> 
+          <input type="submit" /> <input type="reset" /> 
+         </p> 
+
+  </form>  
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+   
+    
+</body>
+</html>
